@@ -4,7 +4,10 @@ def main():
 
 def print_square(size):
     for i in range(size):
-        print("#" * 3)
-    print("kuszkusz")    
+        print_row(size)
+    
+def print_row(width):
+    print("#" * width)
+
     
 main()
