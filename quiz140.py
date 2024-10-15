@@ -16,5 +16,5 @@ page =('<div id="top_bin"><div id="top_content" class="width960">'
 start_link = page.find('<a href=')
 first_quote = page.find('"' , start_link)
 second_quote = page.find('"' , first_quote+1)
-first_url = page[first_quote + 1 : second_quote]
-print (first_url)
+url = page[first_quote + 1 : second_quote]
+print (url)
